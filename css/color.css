@@ -1,0 +1,48 @@
+.bg-danger--light
+{
+	background: #FF5959;
+}
+.bg-info--light
+{
+	background: #d0ecff;
+}
+
+.bg-dark--light
+{
+	background: #484d53;
+}
+
+.yellow
+{
+	color: #FFFF2A;
+}
+
+.orange
+{
+	color: #FF5500;
+}
+
+.bg-fade
+{
+	background: #e0e0e0;
+}
+.bg-orange
+{
+	background: #FF5500;
+}
+
+
+.border-low-red
+{
+	border: #FF5959;
+}
+
+.text-primary--dark
+{
+	color: #004999;
+}
+
+.text-primary--light
+{
+	color: #66afff !important;
+}

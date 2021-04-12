@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+	<title>News</title>
+	<!-- <script src="cordova.js"></script>--> 
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sweetalert2@10.js"></script>
+</head>
+<body class="bg-light">
+	<section class="container-fluid">
+		<div class="row">
+			<header class="col-12 h-40px border-bottom">
+				<section class="d-none d-lg-block menu">
+					<!-- <div class="row nav nav-tabs border-0 p-2">
+						<div class="col-3 text-center nav-item active" data-toggle="tab" href="#news" data-tab="news">
+							<i class="fal fa-home"></i>
+						</div>
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#discover" data-tab="discover">
+							<i class="fal fa-compass"></i>
+						</div>				
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#search" data-tab="search">
+							<i class="fal fa-search"></i>
+						</div>				
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#save" data-tab="save">
+							<i class="fal fa-save"></i>
+						</div>
+					</div> -->
+					<nav class="navbar navbar-expand-lg navbar-light p-0">
+					  <div class="collapse navbar-collapse" id="navbarNav">
+					    <ul class="navbar-nav text-dark">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="main.html">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="setting.html">Setting</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Share</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Rate Us</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</section>
+				<section class="d-lg-none">
+					<nav class="navbar navbar-light pl-0 ml-0">
+						<div class="d-block float-left w-100">
+							<div class="position-absolute d-inline-block w-50px float-left">
+								<i class="far fa-bars"></i>
+							</div>
+							<div class="d-inline-block float-left text-center w-100 ml-2">
+								<h6 class="lead">All news</h6>
+							</div>
+						</div>
+					</nav>
+
+					<div class="menu-nav bg-light" style="display: none;">
+						<div class="d-block float-left w-100 border-bottom p-2">
+							<figure class="d-inline-block float-left w-50px m-0 ml-2">
+								<img src="img/logo/logo-3.png" class="img-fluid">
+							</figure>
+							<div class="d-inline-block w-100--120px float-left ml-2 p-2">
+								<span><b>CSM News</b></span>
+							</div>
+							<div class="d-inline-block float-right w-max-50px text-center pl-2 pr-2" id="close-menu">
+								<span class="text-30px">&times</span>
+							</div>
+						</div>
+						<div class="d-block float-left w-100 menu-list">
+							<ul>
+								<li class="border-bottom p-3">
+									<a href="main.html">
+										<i class="fal fa-home"></i>
+										Home
+									</a>
+								</li>
+								<li class="border-bottom p-3">
+									<a href="setting.html">
+										<i class="fal fa-cog"></i>
+										Setting
+									</a>
+								</li>
+								<li class="border-bottom p-3">
+									<a href="#share">
+										<i class="fal fa-share-alt"></i>
+										Share
+									</a>
+								</li>
+								<li class="border-bottom p-3">
+									<a href="#rate">
+										<i class="fal fa-star"></i>
+										Rate Us
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</header>
+
+			<section class="col-12 tab-content">
+				<div class="tab-pane fade show active mt-2" id="news">
+					<div class="row mb-5">
+						<a class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2 text-dark text-decoration-none" href="post.html">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n1.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n2.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n3.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n4.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="discover">					
+					<div class="row mb-5">
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/technology.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Technology</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/agenda.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Agenda</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/sport.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Sport</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/finance.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Finance</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/science.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Science</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/entertainment.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Entertainment</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/life.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Life</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/art.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Art and Culture</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/cinema.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Cinema</b></h6>
+							</div>							
+						</div>
+
+						<div class="col-6 col-lg-3 col-md-4  mt-1 p-2">
+							<div class="w-100 h-120px rounded overflow-hidden pos-relative">
+								<img src="img/category/game.jpg" class="img-height">
+								<div class="position-absolute darkness-bottom"></div>
+								<h6 class="bottom-title-absolute w-100 text-center text-light text-14px"><b>Game</b></h6>
+							</div>							
+						</div>					
+					</div>					
+				</div>
+
+				<div class="tab-pane fade" id="search">
+					<div class="row mb-5">
+						<div class="col-12 mt-4 h-70px border-bottom">
+							<div class="input-group">
+						        <div class="input-group-prepend">
+						          <span class="input-group-text bg-white border-white" id="inputGroupPrepend"><i class="fal fa-search"></i></span>
+						        </div>
+						        <input type="text" class="form-control w-100 input-border-none p-2 rounded" placeholder="Search...">						        
+						    </div>
+						</div>
+						<div class="col-12 mt-2">
+							<header class="w-100 p-2">
+								<h6><b>Popular</b></h6>
+							</header>
+							<div class="tags">
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Apple</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Watch</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Nutrion</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Apple</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Watch</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Nutrion</span></span>
+								</div>
+
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Apple Watch</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Watch</span></span>
+								</div>
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Nutrion</span></span>
+								</div>
+
+
+								<div class="d-block float-left p-2 pl-3 pr-3 m-1 bg-primary text-light rounded">
+									<span>#<span>Apple Watch</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="save">
+					<div class="row mb-5">
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n1.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n2.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n3.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-sm-12 col-lg-3 col-md-6 mt-2 mb-2">
+							<div class="w-100 h-300px border rounded overflow-hidden">
+								<div class="d-block w-100 float-left h-180px overflow-hidden">
+									<img src="img/news/n4.jpg" class="img-fluid">
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<h4 class="text-14px"><b>A video clip of a high school track star breaking the 4-minute mile will fund other teen athletes' dreams</b></h4>
+								</div>
+
+								<div class="d-block w-100 float-left p-2">
+									<div class="d-inline-block float-left w-50 text-muted">
+										<small>
+											<i class="ml-2 fal fa-clock"></i>
+											<span>2 hours</span>												
+										</small>
+									</div>
+									<div class="d-inline-block float-left w-50 text-right">
+										<small>
+											<i class="mr-2 fal fa-bookmark"></i>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="darkness"></div>
+
+			<footer class="fixed-bottom bg-dark text-secondary footer-nav">
+				<div class="container-fluid h-40px">
+					<div class="row nav nav-tabs border-0 p-2">
+						<div class="col-3 text-center nav-item active" data-toggle="tab" href="#news" data-tab="news">
+							<i class="fal fa-home"></i>
+						</div>
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#discover" data-tab="discover">
+							<i class="fal fa-compass"></i>
+						</div>				
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#search" data-tab="search">
+							<i class="fal fa-search"></i>
+						</div>				
+						<div class="col-3 text-center nav-item" data-toggle="tab" href="#save" data-tab="save">
+							<i class="fal fa-save"></i>
+						</div>
+					</div>
+				</div>
+				<!-- <i class="fal fa-home"></i> -->
+			</footer>
+		</div>
+	</section>
+</body>
+</html>

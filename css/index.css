@@ -1,0 +1,58 @@
+@font-face
+{
+	font-family: "IstokWeb";
+	src: url("fonts/IstokWeb-Regular.ttf") format("embedded-opentype"),
+	url("fonts/IstokWeb-Regular.ttf") format("opentype");
+}
+body
+{
+	font-family: IstokWeb;
+}
+
+.nav-item.active
+{
+	color: #fff;
+	/*color: #3c1000;*/
+}
+.menu .nav-item.active
+{
+	color: #FF5500;
+	/*color: #3c1000;*/
+}
+
+.bottom-title-absolute
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+}
+.menu-nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 95vw;
+	height: 100vh;
+	z-index: 100;
+}
+.footer-nav
+{
+	z-index: 99;
+}
+
+.menu-list ul
+{
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+}
+.menu-list ul li,.menu-list ul li a, .menu-list ul li a:hover,.menu-list ul li a:focus
+{
+	text-decoration: none;
+	color: #000;
+}
